@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_kerja"
+            android:icon="@drawable/ic_kerja"
+            android:title="@string/kerja" />
+        <item
+            android:id="@+id/nav_kegiatan"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="@string/master_kegiatan" />
+        <item
+            android:id="@+id/nav_agenda"
+            android:icon="@drawable/ic_calendar"
+            android:title="@string/agenda" />
+        <item
+            android:id="@+id/nav_kinerja"
+            android:icon="@drawable/ic_kinerja"
+            android:title="@string/kinerja" />
+    </group>
+
+    <item android:title="Lainnya">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="Tentang Aplikasi" />
+        </menu>
+
+    </item>
+
+</menu>

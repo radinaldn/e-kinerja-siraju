@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_dialog_layout_design_user_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activities.AgendaActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_nama_agenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_kerja"
+            android:hint="Agenda"
+            android:drawablePadding="5dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/textColorPrimary"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_ket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_format_align_justify_black_24dp"
+            android:hint="Keterangan"
+            android:drawablePadding="5dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/textColorPrimary"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_waktu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/cb_datepicker"
+            android:text="Tampilkan Date Picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="35dp"
+            android:textSize="18sp"
+            android:id="@+id/tv_datepicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <DatePicker
+            android:visibility="gone"
+            android:id="@+id/dp_datepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+        android:id="@+id/cb_timepicker"
+        android:text="Tampilkan Time Picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="35dp"
+            android:textSize="18sp"
+            android:id="@+id/tv_timepicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TimePicker
+            android:visibility="gone"
+            android:id="@+id/tp_timepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TimePicker>
+
+
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>
+

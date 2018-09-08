@@ -1,0 +1,3 @@
+adb server version (39) doesn't match this client (36); killing...
+* daemon started successfully *
+sh: cat: ~/databases/db-file: No such file or directory
