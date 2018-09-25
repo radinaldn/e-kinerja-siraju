@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/custom_dialog_layout_design_user_input"
     android:layout_width="match_parent"
@@ -7,120 +6,21 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp">
-
-        <TextView
-            android:paddingLeft="5dp"
-            android:drawablePadding="5dp"
-            android:drawableLeft="@drawable/ic_kerja"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text=""
-            />
-        <Spinner
-            android:id="@+id/sp_kerja"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></Spinner>
-    </LinearLayout>
-
-
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/et_durasi"
+            android:id="@+id/et_nama_kegiatan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_access_time_black_24dp"
-            android:hint="Durasi (menit)"
+            android:drawableLeft="@drawable/ic_kerja"
+            android:hint="Kegiatan"
             android:drawablePadding="5dp"
-            android:inputType="number"
+            android:inputType="text"
             android:singleLine="true"
             android:textColor="@color/textColorPrimary"/>
 
     </android.support.design.widget.TextInputLayout>
 
-    <TextView
-        android:paddingLeft="5dp"
-        android:text="Kategori"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <RadioGroup
-        android:orientation="horizontal"
-        android:id="@+id/rg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-
-            <RadioButton
-                android:checked="true"
-                android:id="@+id/rb_tupoksi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tupoksi"
-                android:paddingRight="5dp"
-                android:layout_marginRight="8dp"/>
-
-            <RadioButton
-
-                android:id="@+id/rb_nontupoksi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Non Tupoksi" />
-    </RadioGroup>
-
-    <TextView
-        android:paddingTop="5dp"
-        android:paddingLeft="5dp"
-        android:text="Tanggal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <RadioGroup
-        android:orientation="horizontal"
-        android:id="@+id/rg_waktu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-            <RadioButton
-
-                android:checked="true"
-                android:id="@+id/rb_otomatis"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Otomatis"
-                android:paddingRight="5dp"/>
-
-            <RadioButton
-
-                android:id="@+id/rb_manual"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Manual" />
-
-    </RadioGroup>
-
-    <android.support.design.widget.TextInputLayout
-android:visibility="gone"
-        android:id="@+id/til_waktu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <DatePicker
-            android:id="@+id/dp_datepicker"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></DatePicker>
-
-    </android.support.design.widget.TextInputLayout>
 </LinearLayout>
-

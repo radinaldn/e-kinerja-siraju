@@ -11,14 +11,13 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/et_nama_kegiatan"
+            android:id="@+id/et_nama_kerja"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_kerja"
             android:hint="Kegiatan"
             android:drawablePadding="5dp"
             android:inputType="text"
-            android:singleLine="true"
             android:textColor="@color/textColorPrimary"/>
 
     </android.support.design.widget.TextInputLayout>
